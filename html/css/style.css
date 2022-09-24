@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+:root{
+    --bg-color: #303134;
+    --color-text: #cad2db;
+    box-shadow: 10px 10px 10px 0 rgb(32, 33,36, 1),
+                -1px -1px 9px 0 rgb(32, 33,36, 1); 
+                
+}
+body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: #303134;
+}
+.container{
+    width: 30%;
+    max-width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 5px 5px 5px 0 rgb(32, 33,36, 1),
+                -1px -1px 3px 0 rgb(32, 33,36, 1);
+                border-radius: 1rem;
+                text-align: center;
+                color: var(--color-text);
+                padding: 1rem;
+                background-color: var(--bg-color);
+}
+.color-hex,
+.btns *{
+    background-color: var(--bg-color);
+    box-shadow: vafr(--box-shadow);
+    border-radius: .5rem;
+    padding: .5rem 1rem;
+}
+.color-hex{
+    font-weight: 600;
+    letter-spacing: 3px;
+    font-size: 1.5rem;
+    margin: 2rem 0 2rem 0;
+}
+.btns *{
+    outline: none;
+    border: none;
+    color: var(--color-text);
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+button{
+    background-color: gray;
+    color: white;
+    padding: 15px 32px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 20vh 10vh;
+    
+} 
+@-webkit-keyframes cambia_color {
+    0% {color: #fff; text-shadow: 1px 1px 1px #000; padding-left: 1em}
+    50% {color: rgb(70, 8, 91); text-shadow: 1px 1px 1px #fff; padding-left: 1em;}
+    75% {color: rgb(135, 10, 10); text-shadow: 1px 1px 1px rgb(153, 151, 151); padding-left: 1em;}
+    100% {color: rgb(11, 199, 89); text-shadow: 1px 1px 1px rgb(185, 180, 180); padding-left: 1em;}
+
+
+}
+
+h2 {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-top: 1.em; 
+     -webkit-animation-name: cambia_color;
+     -webkit-animation-iteration-count: infinite;
+     -webkit-animation-timing-function: ease-out;
+     -webkit-animation-duration: 5s;
+     
+
+     }
